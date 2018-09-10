@@ -70,6 +70,13 @@ this.setState((prevState, props) => ({
 
 * 阻止组件渲染（让 render 方法返回 null 而不是它的渲染结果即可实现。）
 
+## 表单
 
+总之，<input type="text">, <textarea>, 和 <select> 都十分类似 - 他们都通过传入一个value属性来实现对组件的控制。（受控组件）
+  
+file input 标签（非受控组件）
+
+##　状态提升
+在React中，状态分享是通过将state数据提升至离需要这些数据的组件最近的父组件来完成的。这就是所谓的状态提升
 
 
