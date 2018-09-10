@@ -68,6 +68,8 @@ this.setState((prevState, props) => ({
 
 * 三目运算符（condition ? true : false）
 
+* 阻止组件渲染（让 render 方法返回 null 而不是它的渲染结果即可实现。）
+
 
 
 
