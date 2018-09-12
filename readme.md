@@ -76,7 +76,33 @@ this.setState((prevState, props) => ({
   
 file input 标签（非受控组件）
 
-##　状态提升
+## 状态提升
+
 在React中，状态分享是通过将state数据提升至离需要这些数据的组件最近的父组件来完成的。这就是所谓的状态提升
 
+## 收集的问题
+
+### 1. react router 404处理
+
+思路：由于路由自上而下匹配，处理404只需在最后一个打底路由进行处理
+
+首先需要编辑一个404错误页面，封装成组件，方便路由进行调用。
+
+React中的404主要靠Switch组件来完成，代码如下：
+
+```js
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+<BrowserRouter>
+    <div>
+        <RouteMap/>
+        <Switch>
+            <Route exact path='/' component={App} />
+            <Route path='/email' component={ModifyEmail}/>
+            <Route path='/password' component={ModifyPassword}/>
+            <Route path='/phone' component={ModifyPhone}/>
+            <Route path="*" component={NotFound}/>
+        </Switch>
+    </div>
+</BrowserRouter>
+```
 
