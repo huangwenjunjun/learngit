@@ -1,0 +1,15 @@
+.stepHead {
+    width: 60%;
+    margin: 50px auto;
+}
+.textLeft {
+    text-align: right;
+}
+.ant-row {
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.codeInput {
+    width: 200px;
+    margin-right: 10px;
+}
