@@ -72,7 +72,7 @@ this.setState((prevState, props) => ({
 
 ## 表单
 
-总之，<input type="text">, <textarea>, 和 <select> 都十分类似 - 他们都通过传入一个value属性来实现对组件的控制。（受控组件）
+总之，`<input type="text">`, `<textarea>`, 和 `<select>` 都十分类似 - 他们都通过传入一个`value`属性来实现对组件的控制。（受控组件）
   
 file input 标签（非受控组件）
 
